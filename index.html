@@ -12,69 +12,119 @@
 </head>
 <body>
 
-  <!-- HEADER -->
-  <header class="site-header">
-    <div class="logo">Tomorrows Future</div>
-    <nav>
-      <a href="#">The Doctrine</a>
-      <a href="#">Partnerships</a>
-      <a href="#">About Us</a>
-      <a href="#">Upcoming Events</a>
-    </nav>
-  </header>
+<!-- HEADER -->
+<header class="site-header">
+  <div class="logo">Tomorrows Future</div>
+  <nav>
+    <a href="#">The Doctrine</a>
+    <a href="#">Partnerships</a>
+    <a href="#">About Us</a>
+    <a href="#">Upcoming Events</a>
+  </nav>
+</header>
 
-  <!-- HERO -->
-  <section class="hero">
+<!-- HERO SECTION -->
+<section class="hero">
+
+  <!-- SVG BACKGROUND -->
+  <svg
+    class="hero-svg"
+    viewBox="0 0 1440 900"
+    preserveAspectRatio="xMidYMid slice"
+  >
+    <defs>
+      <radialGradient id="bgGlow" cx="50%" cy="20%" r="70%">
+        <stop offset="0%" stop-color="#2a1d0b"/>
+        <stop offset="100%" stop-color="#000"/>
+      </radialGradient>
+    </defs>
+
+    <rect width="1440" height="900" fill="url(#bgGlow)" />
+
+    <!-- Decorative arcs -->
+    <circle cx="720" cy="480" r="520" fill="none" stroke="#d4af37" stroke-width="1" opacity="0.25"/>
+    <circle cx="720" cy="480" r="420" fill="none" stroke="#d4af37" stroke-width="1" opacity="0.15"/>
+
+    <!-- Center emblem -->
+    <line x1="720" y1="140" x2="720" y2="260" stroke="#d4af37" stroke-width="1"/>
+    <circle cx="720" cy="260" r="6" fill="#d4af37"/>
+  </svg>
+
+  <!-- HERO CONTENT -->
+  <div class="hero-content">
     <h1>Education Begins<br>Before the Classroom</h1>
 
     <div class="hero-buttons">
       <button class="gold-btn">Explore the Doctrine</button>
       <button class="gold-btn outline">Join the Movement</button>
     </div>
-  </section>
+  </div>
+</section>
 
-  <!-- DOCTRINE INTRO -->
-  <section class="doctrine-intro">
-    <p>
-      Our teachable, replicable engine for identity formation<br>
-      and meaning recognition.
-    </p>
+<!-- DOCTRINE -->
+<section class="doctrine">
+  <p>
+    Our teachable, replicable engine for identity formation<br>
+    and meaning recognition.
+  </p>
 
-    <div class="pillars">
-      <div class="pillar">
-        <span class="icon">⏳</span>
-        <h3>Identity</h3>
-        <small>Before Instruction</small>
-      </div>
-
-      <div class="pillar">
-        <span class="icon">△</span>
-        <h3>Meaning</h3>
-        <small>Before Measurement</small>
-      </div>
-
-      <div class="pillar">
-        <span class="icon">⚖</span>
-        <h3>Recognition</h3>
-        <small>Before Compliance</small>
-      </div>
+  <div class="pillars">
+    <div class="pillar">
+      <h3>Identity</h3>
+      <span>Before Instruction</span>
     </div>
-
-    <button class="gold-btn">Learn More</button>
-  </section>
-
-  <!-- CORRESPONDENCE CYCLE -->
-  <section class="cycle">
-    <h2>The Correspondence Cycle™</h2>
-
-    <div class="cycle-diagram">
-      <div class="node top">Recall</div>
-      <div class="node right">Inducement</div>
-      <div class="node bottom-right">Recognition</div>
-      <div class="node bottom-left">Association</div>
-      <div class="node left">Sensation</div>
+    <div class="pillar">
+      <h3>Meaning</h3>
+      <span>Before Measurement</span>
     </div>
-  </section>
+    <div class="pillar">
+      <h3>Recognition</h3>
+      <span>Before Compliance</span>
+    </div>
+  </div>
+
+  <button class="gold-btn">Learn More</button>
+</section>
+
+<!-- CORRESPONDENCE CYCLE -->
+<section class="cycle">
+  <h2>The Correspondence Cycle™</h2>
+
+  <svg
+    class="cycle-svg"
+    viewBox="0 0 600 600"
+    preserveAspectRatio="xMidYMid meet"
+  >
+    <circle cx="300" cy="300" r="260" fill="none" stroke="#d4af37" opacity="0.3"/>
+    <circle cx="300" cy="300" r="200" fill="none" stroke="#d4af37" opacity="0.2"/>
+
+    <!-- Nodes -->
+    <g class="node">
+      <circle cx="300" cy="40" r="36"/>
+      <text x="300" y="45">Recall</text>
+    </g>
+
+    <g class="node">
+      <circle cx="520" cy="300" r="36"/>
+      <text x="520" y="305">Inducement</text>
+    </g>
+
+    <g class="node">
+      <circle cx="420" cy="500" r="36"/>
+      <text x="420" y="505">Recognition</text>
+    </g>
+
+    <g class="node">
+      <circle cx="180" cy="500" r="36"/>
+      <text x="180" y="505">Association</text>
+    </g>
+
+    <g class="node">
+      <circle cx="80" cy="300" r="36"/>
+      <text x="80" y="305">Sensation</text>
+    </g>
+  </svg>
+</section>
 
 </body>
 </html>
