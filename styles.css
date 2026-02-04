@@ -1,0 +1,158 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background: radial-gradient(circle at top, #1a1308, #000);
+  color: #d4af37;
+  min-height: 100vh;
+}
+
+/* HEADER */
+.site-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 24px 60px;
+}
+
+.logo {
+  font-family: 'Cinzel', serif;
+  font-size: 22px;
+  letter-spacing: 1px;
+}
+
+nav a {
+  margin-left: 32px;
+  text-decoration: none;
+  color: #d4af37;
+  font-size: 14px;
+  letter-spacing: 1px;
+  opacity: 0.85;
+}
+
+nav a:hover {
+  opacity: 1;
+}
+
+/* HERO */
+.hero {
+  text-align: center;
+  padding: 140px 20px 120px;
+}
+
+.hero h1 {
+  font-family: 'Cinzel', serif;
+  font-size: 64px;
+  letter-spacing: 2px;
+  margin-bottom: 40px;
+}
+
+.hero-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+}
+
+/* BUTTONS */
+.gold-btn {
+  background: transparent;
+  border: 1px solid #d4af37;
+  color: #d4af37;
+  padding: 14px 28px;
+  font-family: 'Cinzel', serif;
+  letter-spacing: 1px;
+  cursor: pointer;
+}
+
+.gold-btn.outline {
+  background: none;
+}
+
+.gold-btn:hover {
+  background: rgba(212, 175, 55, 0.08);
+}
+
+/* DOCTRINE */
+.doctrine-intro {
+  text-align: center;
+  padding: 120px 20px;
+}
+
+.doctrine-intro p {
+  font-size: 15px;
+  margin-bottom: 80px;
+  line-height: 1.6;
+}
+
+.pillars {
+  display: flex;
+  justify-content: center;
+  gap: 100px;
+  margin-bottom: 60px;
+}
+
+.pillar {
+  text-align: center;
+}
+
+.pillar .icon {
+  font-size: 32px;
+  display: block;
+  margin-bottom: 16px;
+}
+
+.pillar h3 {
+  font-family: 'Cinzel', serif;
+  margin-bottom: 6px;
+}
+
+.pillar small {
+  font-size: 12px;
+  opacity: 0.8;
+}
+
+/* CYCLE */
+.cycle {
+  text-align: center;
+  padding: 140px 20px;
+}
+
+.cycle h2 {
+  font-family: 'Cinzel', serif;
+  font-size: 36px;
+  margin-bottom: 80px;
+}
+
+.cycle-diagram {
+  position: relative;
+  width: 420px;
+  height: 420px;
+  margin: 0 auto;
+  border: 1px solid rgba(212, 175, 55, 0.4);
+  border-radius: 50%;
+}
+
+.node {
+  position: absolute;
+  width: 120px;
+  height: 120px;
+  border: 1px solid #d4af37;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Cinzel', serif;
+  font-size: 13px;
+  background: rgba(0, 0, 0, 0.6);
+}
+
+/* Node positions */
+.top { top: -60px; left: 150px; }
+.right { top: 150px; right: -60px; }
+.bottom-right { bottom: -40px; right: 40px; }
+.bottom-left { bottom: -40px; left: 40px; }
+.left { top: 150px; left: -60px; }
